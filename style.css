@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Bhaina+2&family=Gluten:wght@200;300&family=Poppins:wght@400;500;700&family=Roboto:wght@300;400;500;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+body {
+  background-color: #8fd6b7df;
+}
+header {
+ background-image: url(images/Hoodie-2.jpeg);
+ background-repeat: no-repeat;
+ background-size: cover;
+ background-position: center;
+ height: 150px;
+ position: relative;
+}
+header h2 {
+  font-size: 30px;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index:1;
+  padding: 0 !important;
+  margin: 0 !important;
+  height: 100%;
+  background-color: rgba(10, 10, 10, 0.3);
+}
+nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index:2;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap; 
+  padding: 50px 60px 0 60px;
+}
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0 10px;
+}
+nav li span {
+  padding-left: 5px;
+}
+nav li a {
+  text-decoration: none;
+  background-color: #fff;
+  padding: 10px;
+  font-size: 24px;
+  color: #222;
+}
+/* .icon-cart {
+  width: 30px;
+  height: 30px;
+  align-items: center;
+} */
+
+.cart ion-icon {
+  vertical-align: bottom;
+  padding-right:5px;
+  font-size: 30px;
+
+}
+.cart a {
+  background-color: #7826c5;
+  color: #fff;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 100px;
+  margin-top: 50px;
+  position: relative;
+}
+.image {
+  background-color: #93d8df9f;
+  margin: 0 20px;
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 10px
+}
+.image .img-8 {
+  width: 400px;
+  /* height: 250px; */
+}
+.image img {
+  border-radius: 5px;
+}
+.add-cart {
+font-size: 26px;
+    background-color: darkgray;
+    position: absolute;
+    bottom: 50px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #222;
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+} 
+.image:hover .cart-1,
+.image:hover .cart-2,
+.image:hover .cart-3,
+.image:hover .cart-4,
+.image:hover .cart-5 {
+  bottom: 50px;
+  opacity: 1;
+  padding: 10px;
+  text-decoration: none;
+  z-index: 22;
+}
