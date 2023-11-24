@@ -12,7 +12,7 @@ function Cards({ item, handleClick }) {
       <div className="details">
         <p>{title}</p>
         <p>{author}</p>
-        <p>price - {price}Rs</p>
+        <p>${price}</p>
         <button onClick={() => handleClick(item)}>Add to cart</button>
       </div>
     </div>

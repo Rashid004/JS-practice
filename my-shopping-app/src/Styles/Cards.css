@@ -16,6 +16,7 @@ section {
 .cards:hover {
   box-shadow: 0 10px 10px 10px rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  border-radius: 6px;
 }
 .image_box img {
   width: 150px;
@@ -25,19 +26,24 @@ section {
   font-weight: bold;
 }
 .details p:nth-child(2) {
-  color: grey;
+  color: #333;
   font-size: 0.8rem;
+  display: inline-block;
 }
 .details p:nth-child(3) {
   font-weight: bold;
-  color: grey;
+  color: #333;
+  display: inline-block;
+  padding: 16px 24px;
 }
 .details button {
-  padding: 5px 10px;
   border: none;
-  font-weight: bold;
-  background-color: skyblue;
   outline: none;
-  border-radius: 2px;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 6px 12px;
+  background-color: #e67e22;
+  color: #fdf2e9;
+  border-radius: 6px;
   cursor: pointer;
 }

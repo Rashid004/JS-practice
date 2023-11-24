@@ -3,13 +3,15 @@
 import React from "react";
 import "../Styles/Navbar.css";
 
-function Navbar({ size }) {
+function Navbar({ size, onHandleShow }) {
   return (
     <nav>
       <div className="nav_box">
-        <span className="my_shop">my Shopping</span>
+        <span className="my_shop" onClick={onHandleShow}>
+          my Shopping
+        </span>
 
-        <div className="cart">
+        <div className="cart" onClick={onHandleShow}>
           <span>
             <i className="fas fa-cart-plus"></i>
           </span>
